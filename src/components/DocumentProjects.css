@@ -1,0 +1,37 @@
+.document-projects { padding: 0 0 65px; }
+.document-heading { display: flex; justify-content: space-between; align-items: end; gap: 30px; margin-bottom: 25px; }
+.document-heading h2 { font-size: clamp(30px, 3.3vw, 46px); font-weight: 500; letter-spacing: -1.8px; line-height: 1.15; }
+.document-heading > p { max-width: 335px; font-size: 12px; line-height: 1.8; color: var(--muted, #707468); }
+.document-projects .tabs { width: fit-content; max-width: 100%; overflow-x: auto; margin-bottom: 22px; }
+.document-projects .tabs > button { flex-shrink: 0; }
+.document-panel { display: grid; grid-template-columns: 1.6fr 1fr; gap: 25px 55px; border: 1px solid #d9ddcf; border-radius: 16px; padding: 30px; background: #f0f1e9; }
+.document-number { color: #777e69; font-size: 9px; }
+.document-overview h3 { font-size: clamp(25px, 2.4vw, 34px); font-weight: 500; letter-spacing: -1px; margin: 12px 0; line-height: 1.15; }
+.document-overview > p { font-size: 13px; line-height: 1.85; max-width: 600px; color: #666e60; }
+.document-overview .tags { margin-top: 18px; }
+.document-flow { align-self: center; background: #fffefa; padding: 22px 25px; border-radius: 10px; border: 1px solid #dce1d2; }
+.document-flow .eyebrow { display: block; font-size: 8px; color: #818b73; }
+.document-flow strong { display: block; font-size: 15px; font-weight: 500; margin-top: 7px; }
+.document-flow-arrow { display: block; color: var(--blue); margin: 10px 0; }
+.document-details { grid-column: 1 / -1; border-top: 1px solid #d7ddcb; }
+.document-details summary { display: flex; justify-content: space-between; cursor: pointer; padding-top: 18px; list-style: none; font-size: 12px; }
+.document-details summary::-webkit-details-marker { display: none; }
+.document-details summary > span { transition: transform .2s; font-size: 18px; }
+.document-details[open] summary > span { transform: rotate(45deg); }
+.document-explanation { display: grid; grid-template-columns: repeat(3, 1fr); gap: 28px; padding-top: 20px; }
+.document-explanation h4 { font-size: 12px; font-weight: 600; margin-bottom: 9px; }
+.document-explanation p { font-size: 12px; line-height: 1.85; color: #666e60; }
+@media (max-width: 700px) {
+  .document-projects { padding-bottom: 40px; }
+  .document-heading { display: block; }
+  .document-heading > p { margin-top: 14px; font-size: 11px; }
+  .document-heading h2 { max-width: 360px; }
+  .document-projects .tabs { width: 100%; }
+  .document-projects .tabs > button { font-size: 10px; padding: 12px; }
+  .document-panel { grid-template-columns: 1fr; padding: 20px; gap: 22px; }
+  .document-overview > p { font-size: 12px; }
+  .document-overview .tags > span { font-size: 8px; }
+  .document-flow { padding: 18px; }
+  .document-flow strong { font-size: 13px; }
+  .document-explanation { grid-template-columns: 1fr; gap: 20px; }
+}

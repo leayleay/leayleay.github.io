@@ -1,0 +1,88 @@
+.campus-roles { max-width: 620px; margin-top: 22px; margin-right: 22px; }
+.campus-caption { display: flex; align-items: center; gap: 8px; color: #7a866d; margin-bottom: 11px; }
+.campus-caption-line { width: 18px; height: 1px; background: #a2af8b; }
+.campus-caption > span:nth-child(2) { font: 7px var(--mono); letter-spacing: 1px; }
+.campus-passes { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+.campus-pass { position: relative; display: flex; align-items: center; gap: 11px; padding: 14px 12px; border-radius: 8px; border: 1px solid #ccd5e7; background: #eaf0fc; color: #38579a; text-decoration: none; box-shadow: 0 4px 0 #d5ddec40; }
+.campus-polyhx { background: #eee7f5; border-color: #d8cbe7; color: #72568d; box-shadow: 0 4px 0 #dfd4e940; }
+.campus-pass-mark { display: grid; place-items: center; width: 32px; height: 32px; border: 1px solid currentColor; border-radius: 50%; font: 11px var(--mono); flex-shrink: 0; opacity: .8; }
+.campus-polyhx .campus-pass-mark { font-size: 23px; }
+.campus-pass-copy { display: grid; gap: 4px; min-width: 0; }
+.campus-club { font-size: 17px; font-weight: 650; letter-spacing: -.5px; }
+.campus-pass-copy > strong { font-size: 12px; font-weight: 500; white-space: nowrap; }
+.campus-pass-detail { font-size: 8px; line-height: 1.5; opacity: .8; }
+.campus-pass-perforation { position: absolute; right: 28px; top: 0; bottom: 0; border-left: 1px dashed currentColor; opacity: .2; }
+.campus-pass-end { writing-mode: vertical-rl; font: 5px/1.4 var(--mono); letter-spacing: 1px; margin-left: auto; padding-left: 4px; opacity: .55; }
+.hero-copy:has(.campus-roles) .hero-description { margin-top: 20px; }
+@media (min-width: 701px) {
+ .hero-copy:has(.campus-roles) h1 { font-size: clamp(60px,6.1vw,91px); }
+ .hero-layout:has(.campus-roles) { padding-top: 30px; padding-bottom: 16px; }
+}
+@media (max-width: 1100px) {
+ .campus-roles { margin-right: 15px; }
+ .campus-pass { gap: 8px; padding: 12px 9px; }
+ .campus-pass-mark { width: 25px; height: 25px; font-size: 9px; }
+ .campus-club { font-size: 15px; }
+ .campus-pass-copy > strong { font-size: 10px; }
+ .campus-pass-detail { font-size: 7px; max-width: 110px; }
+ .campus-pass-end,.campus-pass-perforation { display: none; }
+}
+@media (max-width: 700px) {
+ .campus-roles { margin: 19px 0 0; }
+ .campus-caption { margin-bottom: 9px; }
+ .campus-caption > span:nth-child(2) { font-size: 6px; letter-spacing: .6px; }
+ .campus-passes { gap: 9px; }
+ .campus-pass { padding: 12px 10px; gap: 8px; }
+ .campus-club { font-size: 16px; }
+ .campus-pass-copy > strong { font-size: 10px; }
+ .campus-pass-detail { font-size: 7px; max-width: none; }
+ .hero-copy:has(.campus-roles) h1 { font-size: clamp(49px,12vw,72px); }
+}
+@media (max-width: 360px) {
+ .campus-pass { gap: 7px; padding: 11px 8px; }
+ .campus-pass-mark { display: none; }
+ .campus-pass-copy > strong { font-size: 11px; }
+}
+
+.campus-pass { text-align: left; width: 100%; }
+.campus-dialog { --club-accent: #38579a; --club-wash: #eaf0fc; border: 1px solid #e1e5ed; border-radius: 16px; width: min(830px,94vw); max-height: 90dvh; margin: auto; padding: 0; overflow: auto; overscroll-behavior: contain; background: #f8f7f2; color: #293126; box-shadow: 0 25px 90px #192a4550; }
+.campus-dialog-polyhx { --club-accent: #72568d; --club-wash: #eee7f5; }
+.campus-dialog::backdrop { background: #23354c75; backdrop-filter: blur(8px); }
+.campus-dialog[open] { animation: campus-dialog-enter .3s cubic-bezier(.22,1,.36,1); }
+@keyframes campus-dialog-enter { from { opacity: 0; transform: translateY(24px) scale(.97); } to { opacity: 1; transform: none; } }
+.campus-dialog-inner { padding: 26px 32px; }
+.campus-dialog-top { display: flex; align-items: center; justify-content: space-between; gap: 15px; margin-bottom: 20px; }
+.campus-dialog-top > .eyebrow { font-size: 8px; color: #7b8670; }
+.campus-dialog-close { display: flex; align-items: center; gap: 13px; min-height: 44px; padding: 8px 15px; background: var(--club-wash); color: var(--club-accent); border: 1px solid #d5dcea; border-radius: 24px; font-size: 11px; }
+.campus-dialog-close > span { font-size: 21px; }
+.campus-dialog-identity { display: flex; gap: 18px; align-items: center; color: var(--club-accent); }
+.campus-dialog-mark { display: grid; place-items: center; width: 65px; height: 65px; background: var(--club-wash); border: 1px solid #d9dfe9; border-radius: 15px; font: 24px var(--mono); }
+.campus-dialog-identity h2 { font-size: 42px; line-height: 1.1; letter-spacing: -1.5px; font-weight: 600; }
+.campus-dialog-identity p { font-size: 14px; margin-top: 6px; }
+.campus-dialog-intro { color: #66705d; font-size: 13px; line-height: 1.85; margin: 21px 0 24px; max-width: 670px; }
+.campus-work-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+.campus-work-item { border: 1px solid #dce0d4; border-radius: 10px; padding: 18px; background: #fffdf8; }
+.campus-work-index { color: var(--club-accent); font: 8px var(--mono); }
+.campus-work-item h3 { font-size: 17px; font-weight: 500; line-height: 1.25; letter-spacing: -.3px; margin: 10px 0; }
+.campus-work-item > p { font-size: 12px; line-height: 1.8; color: #6f7767; }
+.campus-work-link { display: inline-flex; align-items: center; gap: 9px; font-size: 11px; color: var(--club-accent); margin-top: 15px; min-height: 30px; }
+.campus-work-link:hover { text-decoration: underline; text-underline-offset: 4px; }
+.campus-work-link > svg { width: 13px; height: 13px; }
+.campus-dialog-bottom { display: flex; justify-content: space-between; align-items: center; gap: 20px; border-top: 1px solid #dce0d4; padding-top: 20px; margin-top: 22px; }
+.campus-dialog-bottom > .handwritten { font-size: 20px; line-height: 1.4; color: #7e8d70; }
+.campus-dialog-bottom > button { display: inline-flex; align-items: center; gap: 8px; border: 0; background: none; color: var(--club-accent); font-size: 11px; white-space: nowrap; min-height: 44px; }
+.campus-dialog-bottom > button > svg { width: 13px; height: 13px; }
+@media (max-width: 600px) {
+ .campus-dialog-inner { padding: 18px; }
+ .campus-dialog-top > .eyebrow { font-size: 6px; }
+ .campus-dialog-identity h2 { font-size: 35px; }
+ .campus-dialog-identity p { font-size: 12px; }
+ .campus-dialog-mark { width: 54px; height: 54px; font-size: 20px; }
+ .campus-dialog-intro { font-size: 12px; }
+ .campus-work-grid { grid-template-columns: 1fr; }
+ .campus-work-item { padding: 16px; }
+ .campus-work-link { min-height: 44px; }
+ .campus-dialog-bottom { align-items: flex-start; flex-direction: column; gap: 8px; }
+ .campus-dialog-bottom > .handwritten { font-size: 18px; }
+}
+@media (prefers-reduced-motion: reduce) { .campus-dialog[open] { animation: none; } }

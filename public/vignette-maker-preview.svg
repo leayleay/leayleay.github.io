@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="450" viewBox="0 0 720 450" fill="none">
+  <rect width="720" height="450" fill="#ECE3EF"/>
+  <circle cx="650" cy="24" r="117" fill="#E2D7E8"/>
+  <path d="M0 328c87-19 171 28 224 122H0Z" fill="#DADFCB"/>
+  <text x="36" y="31" fill="#7B6884" font-family="monospace" font-size="9" letter-spacing="1.8">IMAGINE. COMPOSE. CREATE.</text>
+  <rect x="40" y="72" width="646" height="325" rx="12" fill="#CEC1D5" fill-opacity=".5"/>
+  <rect x="33" y="62" width="646" height="325" rx="12" fill="#FFFDFA" stroke="#CFC2D6"/>
+  <path d="M33 111h646" stroke="#E8E1E9"/>
+  <rect x="49" y="77" width="24" height="24" rx="7" fill="#DED2EA"/>
+  <path d="m56 88 4 4 8-9" stroke="#816695" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="84" y="94" font-family="Arial,sans-serif" font-size="16" font-weight="600" fill="#5C4769">vignette maker<tspan fill="#A08CAF"> ✳</tspan></text>
+  <text x="462" y="91" font-family="Arial,sans-serif" font-size="9" fill="#94839D">My scenes</text>
+  <rect x="539" y="77" width="120" height="25" rx="5" fill="#E8EEDF"/>
+  <text x="553" y="93" font-family="Arial,sans-serif" font-size="9" fill="#62764D">✓ Use this image</text>
+
+  <path d="M94 112v274" stroke="#E8E1E9"/>
+  <rect x="48" y="129" width="31" height="32" rx="6" fill="#EDE5F2"/>
+  <circle cx="63.5" cy="139" r="4" stroke="#8B71A0" stroke-width="1.5"/>
+  <path d="M57 153v-3a6.5 6.5 0 0 1 13 0v3" stroke="#8B71A0" stroke-width="1.5"/>
+  <path d="m57 184 5-7 4 5 5-4v13H56v-7Z" stroke="#ADA0B5" stroke-width="1.5" stroke-linejoin="round"/>
+  <path d="M56 214h16v12H63l-5 4v-4h-2Z" stroke="#ADA0B5" stroke-width="1.5" stroke-linejoin="round"/>
+  <circle cx="64" cy="255" r="8" stroke="#ADA0B5" stroke-width="1.5"/>
+  <path d="M64 250v10m-5-5h10" stroke="#ADA0B5" stroke-width="1.5"/>
+  <text x="57" y="366" font-family="monospace" font-size="16" fill="#ADA0B5">↶</text>
+
+  <rect x="111" y="128" width="386" height="207" rx="7" fill="#F2EEDC"/>
+  <path d="M111 290c82-47 137-12 194-22 74-14 109-2 192 19v41a7 7 0 0 1-7 7H118a7 7 0 0 1-7-7Z" fill="#DEE3C9"/>
+  <circle cx="155" cy="164" r="16" fill="#E8D9A9"/>
+  <path d="M128 253c-7-41 19-74 40-67 19 8 4 51-19 73" fill="#BACBA3"/>
+  <path d="m143 277 14-73" stroke="#91AB7D" stroke-width="2" stroke-linecap="round"/>
+  <path d="M423 185c0-13 18-19 26-7 9-5 23 0 23 11h-49Z" fill="#FCFAEF"/>
+  <ellipse cx="269" cy="315" rx="35" ry="6" fill="#BEC7A7" fill-opacity=".65"/>
+  <ellipse cx="362" cy="315" rx="36" ry="6" fill="#BEC7A7" fill-opacity=".65"/>
+
+  <g stroke-linecap="round" stroke-linejoin="round">
+    <path d="m256 278-6 34m26-34 7 34" stroke="#69688B" stroke-width="12"/>
+    <path d="m243 314 10 1m27 0 10 1" stroke="#595975" stroke-width="7"/>
+    <path d="M250 239q-10 22-21 25m53-25 14 12 17-11" stroke="#C38C6D" stroke-width="10"/>
+    <path d="M253 230q12-9 24 0l7 52h-36Z" fill="#DDB0BB"/>
+    <path d="M265 217v14" stroke="#C38C6D" stroke-width="10"/>
+    <ellipse cx="265" cy="203" rx="21" ry="24" fill="#C99474"/>
+    <path d="M244 207c-15-8-13-24-4-25-2-14 13-18 19-11 10-12 23-1 21 6 16-1 20 16 10 23l-6 15-3-23-13-8-11 8-10-2Z" fill="#665346"/>
+    <path d="M256 203v3m17-3v3" stroke="#665346" stroke-width="2.5"/>
+    <path d="M259 214q6 5 12-1" stroke="#956649" stroke-width="2"/>
+    <path d="M253 247h23" stroke="#CF98A6" stroke-width="2"/>
+
+    <path d="m352 277-7 35m27-35 5 35" stroke="#7F947A" stroke-width="12"/>
+    <path d="m338 315 10 1m26-1 10 1" stroke="#626F5E" stroke-width="7"/>
+    <path d="m347 240-15 13-17-13m61-2 12 25" stroke="#DEB798" stroke-width="10"/>
+    <path d="M350 228q12-6 24 1l7 53h-37Z" fill="#A3B9A5"/>
+    <path d="M361 215v15" stroke="#D6AD90" stroke-width="10"/>
+    <ellipse cx="362" cy="200" rx="21" ry="24" fill="#E2BEA2"/>
+    <path d="M340 203c-7-25 7-32 21-29 16-9 30 9 22 23l-5-13c-10 7-18 2-26 5l-8 16Z" fill="#726079"/>
+    <path d="M354 199v3m15-3v3" stroke="#786252" stroke-width="2.5"/>
+    <path d="M356 211q5 5 11 0" stroke="#B18A6D" stroke-width="2"/>
+    <path d="m354 232 7 7 9-7" stroke="#87A18B" stroke-width="2"/>
+  </g>
+  <path d="M283 143h109a11 11 0 0 1 11 11v18a11 11 0 0 1-11 11h-76l-12 12v-12h-21a11 11 0 0 1-11-11v-18a11 11 0 0 1 11-11Z" fill="#FFFDFA" stroke="#D9D4BE"/>
+  <text x="286" y="168" fill="#7E715F" font-family="Arial,sans-serif" font-size="11">Let’s make a scene.</text>
+
+  <rect x="510" y="128" width="149" height="207" rx="7" fill="#F7F3F9"/>
+  <text x="524" y="149" font-family="monospace" font-size="7" fill="#9A87A5" letter-spacing=".5">MAKE IT YOURS</text>
+  <text x="524" y="174" font-family="Arial,sans-serif" font-size="9" fill="#776183">Character</text>
+  <circle cx="536" cy="194" r="10" fill="#D8B499"/>
+  <circle cx="564" cy="194" r="10" fill="#BA8266"/>
+  <circle cx="592" cy="194" r="10" fill="#EAD0B1"/>
+  <circle cx="620" cy="194" r="10" fill="#97694F"/>
+  <circle cx="564" cy="194" r="13" stroke="#A28BAF"/>
+  <text x="524" y="224" font-family="Arial,sans-serif" font-size="9" fill="#776183">Outfit</text>
+  <rect x="524" y="234" width="22" height="19" rx="4" fill="#DDB0BB"/>
+  <rect x="554" y="234" width="22" height="19" rx="4" fill="#A3B9A5"/>
+  <rect x="584" y="234" width="22" height="19" rx="4" fill="#AAA4C9"/>
+  <rect x="614" y="234" width="22" height="19" rx="4" fill="#D7BC82"/>
+  <text x="524" y="279" font-family="Arial,sans-serif" font-size="9" fill="#776183">Pose</text>
+  <rect x="524" y="290" width="113" height="25" rx="4" fill="#FFFDFA" stroke="#E1D7E7"/>
+  <text x="535" y="306" font-family="Arial,sans-serif" font-size="8" fill="#8B7697">Saying hello</text>
+  <path d="m623 300 3 3 3-3" stroke="#A190AB" stroke-width="1.2"/>
+  <rect x="111" y="348" width="386" height="23" rx="5" fill="#F5F1F7"/>
+  <circle cx="126" cy="360" r="3" fill="#B0C39A"/>
+  <text x="137" y="363" font-family="Arial,sans-serif" font-size="8" fill="#9886A3">Your scene, ready for another chapter.</text>
+  <text x="528" y="363" font-family="monospace" font-size="7" fill="#9A87A5">SVG → CANVAS → PNG</text>
+</svg>

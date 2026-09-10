@@ -1,0 +1,103 @@
+.student-playground { --scene-tint: #dce5fa; position: relative; width: 100%; min-width: 0; padding-left: 20px; }
+.student-mood-lilac { --scene-tint: #e8dcf3; }
+.student-mood-sage { --scene-tint: #e2e9d4; }
+.student-scene-heading { display: flex; justify-content: space-between; align-items: center; gap: 15px; padding-inline: 14px 4px; }
+.student-scene-heading > .eyebrow { color: #71819c; font-size: 8px; letter-spacing: 1.5px; }
+.student-scene-heading > span:last-child { display: flex; align-items: center; gap: 6px; font: 6px var(--mono); letter-spacing: .7px; color: #899185; }
+.student-scene-heading i { width: 4px; height: 4px; background: #91a47c; border-radius: 50%; }
+.student-stage { position: relative; height: 385px; margin-top: 16px; isolation: isolate; }
+.student-spotlight { position: absolute; inset: 9px 26px 18px; border-radius: 47% 47% 35% 35%; background: radial-gradient(ellipse at 50% 28%, #fffefa88 0%, transparent 60%), var(--scene-tint); transition: background-color .5s; box-shadow: inset 0 0 65px 25px var(--paper); }
+.student-spotlight::after { content: ''; position: absolute; inset: 5%; border: 1px solid #96a0b329; border-radius: 48%; transform: rotate(15deg); }
+.student-orbit { position: absolute; bottom: 16px; left: 12%; width: 80%; height: 47px; border: 1px solid #a1acc748; border-radius: 50%; transform: rotate(-10deg); }
+.student-canvas-wrap { position: absolute; inset: -7px -12px 30px; z-index: 2; overflow: hidden; border-radius: 16px; }
+.workspace-canvas { display: block; width: 100%; height: 100%; touch-action: pan-y; border-radius: 16px; }
+.student-code-sticker { position: absolute; z-index: 3; top: 36px; left: 9px; padding: 15px 17px 11px; color: #637497; background: #fffefa; border: 1px solid #d7dddf; box-shadow: 4px 5px 0 #ccd5e52b; border-radius: 12px; font: 25px var(--mono); transform: rotate(-11deg); pointer-events: none; }
+.student-code-sticker > span { display: block; margin-top: 8px; font: 6px var(--mono); color: #8a92a0; letter-spacing: .2px; }
+.student-note { position: absolute; z-index: 3; bottom: 3px; left: 7px; width: 219px; background: #fffefa; border: 1px solid #d7dcd1; border-radius: 7px; padding: 15px 18px; box-shadow: 4px 5px 0 #dfe3d950; transform: rotate(-5deg); pointer-events: none; }
+.student-note > .eyebrow { display: block; font-size: 6px; color: #8c9580; letter-spacing: 1px; }
+.student-note > strong { display: block; font-size: 26px; font-weight: 500; letter-spacing: -1.3px; margin: 5px 0 7px; }
+.student-note > strong > span { color: var(--blue); margin-inline: 3px; font-family: var(--serif); }
+.student-note-caption { display: block; font-size: 8px; color: #919783; }
+.student-ready-sticker { position: absolute; z-index: 3; right: -5px; top: 200px; width: 99px; height: 99px; background: var(--lime); border: 3px solid var(--paper); border-radius: 50%; display: grid; place-content: center; text-align: center; transform: rotate(12deg); color: #596b40; pointer-events: none; }
+.student-ready-sticker > svg { width: 15px; position: absolute; top: 13px; right: 13px; }
+.student-ready-sticker > span { font-size: 12px; line-height: 1.2; }
+.student-ready-sticker em { font: italic 30px/1.1 var(--serif); }
+.student-handwritten { position: absolute; bottom: -3px; right: 8px; color: #7b8771; font-size: 17px; transform: rotate(6deg); white-space: nowrap; }
+.student-scene-footer { display: flex; align-items: center; justify-content: space-between; gap: 12px; border-top: 1px solid #dce0d4; margin: 29px 6px 0; padding-top: 14px; }
+.student-moods { display: flex; align-items: center; gap: 8px; }
+.student-moods > span { font: 8px var(--mono); color: #7b8472; margin-right: 3px; }
+.student-swatch { width: 24px; height: 24px; background: transparent; border: 1px solid transparent; border-radius: 50%; padding: 4px; transition: border-color .2s, transform .2s; }
+.student-swatch:hover { transform: translateY(-2px); }
+.student-swatch[aria-pressed="true"] { border-color: #8d9782; }
+.student-swatch > span { display: block; width: 100%; height: 100%; border-radius: 50%; background: #a9bdeb; }
+.swatch-lilac > span { background: #cbb2e5; }
+.swatch-sage > span { background: #b8c99e; }
+.student-pause { display: flex; align-items: center; gap: 6px; font: 8px var(--mono); background: transparent; border: 1px solid #d7ddce; border-radius: 5px; color: #748268; padding: 7px 10px; }
+.student-pause:hover { background: #e9eddf; }
+.student-pause > span { font-size: 10px; }
+.student-scene-caption { font: 7px var(--mono); color: #8b9480; }
+.student-interaction-hint { margin: 11px 6px 0; color: #8f9885; font: 7px var(--mono); letter-spacing: .15px; text-align: center; }
+.student-scene-placeholder { width: 100%; height: 100%; display: grid; place-items: center; }
+.student-loading-label { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+.student-load-error { font: 9px var(--mono); color: #7c879b; }
+
+@media (min-width: 1100px) {
+  .student-code-sticker { animation: student-code-float 8s ease-in-out infinite; }
+  .student-ready-sticker { animation: student-ready-float 9s ease-in-out infinite; }
+}
+@keyframes student-code-float { 0%, 100% { transform: rotate(-11deg) translateY(0); } 50% { transform: rotate(-6deg) translateY(-7px); } }
+@keyframes student-ready-float { 0%, 100% { transform: rotate(12deg) translateY(0); } 50% { transform: rotate(17deg) translateY(7px); } }
+.scene-paused .student-code-sticker, .scene-paused .student-ready-sticker { animation-play-state: paused; }
+
+@media (max-width: 1150px) {
+  .student-playground { padding-left: 15px; }
+  .student-stage { height: 360px; }
+  .student-code-sticker { font-size: 22px; padding: 12px 13px 10px; left: 0; }
+  .student-note { width: 185px; padding: 13px 15px; left: -7px; }
+  .student-note > strong { font-size: 23px; }
+  .student-note-caption { font-size: 7px; }
+  .student-handwritten { font-size: 14px; right: -3px; bottom: -18px; }
+  .student-ready-sticker { width: 86px; height: 86px; top: 191px; right: -10px; }
+  .student-ready-sticker em { font-size: 27px; }
+  .student-ready-sticker > span { font-size: 10px; }
+}
+@media (max-width: 900px) {
+  .student-playground { padding-left: 4px; }
+  .student-stage { height: 322px; }
+  .student-scene-heading { padding-left: 6px; }
+  .student-scene-heading > .eyebrow { font-size: 7px; }
+  .student-scene-heading > span:last-child { display: none; }
+  .student-code-sticker { font-size: 20px; top: 30px; padding: 11px; }
+  .student-code-sticker > span { font-size: 5px; }
+  .student-ready-sticker { width: 71px; height: 71px; top: 173px; right: -8px; }
+  .student-ready-sticker > svg { width: 10px; right: 9px; top: 8px; }
+  .student-ready-sticker em { font-size: 23px; }
+  .student-note { width: 173px; padding: 12px 13px; }
+  .student-note > strong { font-size: 21px; }
+  .student-note-caption { font-size: 6px; }
+  .student-moods { gap: 4px; }
+  .student-moods > span { font-size: 7px; }
+  .student-swatch { width: 22px; height: 22px; }
+  .student-pause { font-size: 7px; padding: 6px 8px; }
+  .student-scene-caption { font-size: 6px; }
+  .student-handwritten { font-size: 13px; right: -4px; bottom: -18px; }
+}
+@media (max-width: 700px) {
+  .student-playground { padding: 0; width: 100%; max-width: 440px; margin: 28px auto 0; }
+  .student-stage { height: 274px; margin-top: 10px; }
+  .student-canvas-wrap { inset: 0 0 16px; }
+  .student-scene-heading > span:last-child { display: flex; }
+  .student-scene-heading > .eyebrow { font-size: 8px; }
+  .student-code-sticker { font-size: 21px; left: 7px; top: 15px; }
+  .student-ready-sticker { right: 5px; top: 145px; }
+  .student-note { bottom: -7px; left: 5px; width: 177px; }
+  .student-handwritten { bottom: -20px; right: 4px; font-size: 13px; }
+  .student-scene-footer { gap: 7px; margin-top: 32px; }
+  .student-pause { margin-left: auto; min-height: 44px; }
+  .student-swatch { width: 44px; height: 44px; padding: 12px; }
+}
+@media (max-width: 360px) {
+  .student-handwritten { font-size: 11px; }
+  .student-note { width: 163px; }
+  .student-note > strong { font-size: 20px; }
+}

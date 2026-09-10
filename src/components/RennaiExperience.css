@@ -1,0 +1,87 @@
+.rennai-card { display: flex; align-items: center; gap: 25px; width: 100%; text-align: left; padding: 19px 24px; margin-top: 21px; border: 1px solid #d9d5c7; border-radius: 12px; background: #f4f0e7; color: #494b3d; transition: background .25s, border-color .25s; }
+.rennai-card:hover { background: #faf6ed; border-color: #a9af92; }
+.rennai-snapshot { position: relative; flex-shrink: 0; display: block; width: 85px; padding: 5px 5px 6px; background: #fffcf5; box-shadow: 1px 4px 10px #54452a20; transform: rotate(-6deg); transition: transform .35s cubic-bezier(.22,1,.36,1); }
+.rennai-snapshot::before { content: ''; position: absolute; width: 37px; height: 12px; top: -5px; left: 22px; background: #dbe6bfab; transform: rotate(8deg); }
+.rennai-snapshot img { width: 100%; height: 101px; object-fit: cover; display: block; }
+.rennai-snapshot .handwritten { display: block; font-size: 13px; text-align: center; margin-top: 5px; color: #69735a; }
+.rennai-card:hover .rennai-snapshot { transform: rotate(-2deg) translateY(-3px); }
+.rennai-card-copy { display: grid; gap: 6px; min-width: 0; }
+.rennai-card-copy > .eyebrow { font-size: 7px; letter-spacing: 1px; color: #737960; }
+.rennai-wordmark { font: 400 37px/1.05 var(--serif); letter-spacing: -1px; }
+.rennai-card-description { font-size: 11px; line-height: 1.7; max-width: 300px; }
+.rennai-card-link { display: flex; align-items: center; gap: 6px; font-size: 10px; font-weight: 550; margin-top: 5px; }
+.rennai-card-link > .arrow { width: 12px; height: 12px; }
+.rennai-card-link > span { font: 7px var(--mono); color: #72775e; margin-left: auto; }
+
+.rennai-dialog { color: #414637; background: #f8f5ed; border: 1px solid #e3dece; border-radius: 16px; padding: 0; margin: auto; width: min(840px, 94vw); max-width: none; max-height: 92dvh; overflow: auto; overscroll-behavior: contain; box-shadow: 0 30px 90px #242f2945; }
+.rennai-dialog::backdrop { background: #283b3075; backdrop-filter: blur(9px); }
+.rennai-dialog[open] { animation: rennai-enter .3s cubic-bezier(.22,1,.36,1); }
+.rennai-album-header { display: flex; justify-content: space-between; align-items: center; padding: 13px 23px; gap: 10px; border-bottom: 1px solid #e4dfd1; }
+.rennai-album-header > .eyebrow { font-size: 8px; color: #767963; }
+.rennai-close { display: flex; align-items: center; gap: 12px; background: #e9ecdf; border: 1px solid #dce1ce; border-radius: 30px; min-height: 42px; font-size: 11px; padding: 5px 14px; }
+.rennai-close > span { font-size: 21px; }
+.rennai-close:hover { background: #e0e6d1; }
+.rennai-album-layout { display: grid; grid-template-columns: 1fr .9fr; gap: 34px; padding: 24px; align-items: center; }
+.rennai-media-panel { min-width: 0; }
+.rennai-frame { padding: 8px 8px 0; border-radius: 4px; background: #fffdf7; border: 1px solid #e8e2d4; box-shadow: 0 8px 22px #4d483113; animation: rennai-enter .25s ease-out; }
+.rennai-media { display: block; width: 100%; height: min(57dvh, 560px); object-fit: contain; background: #e6e2d7; border-radius: 2px; }
+.rennai-media:focus-visible { outline-offset: -3px; }
+.rennai-frame figcaption { display: flex; align-items: center; justify-content: space-between; padding: 13px 3px; font: italic 21px/1.2 var(--serif); }
+.rennai-frame figcaption > span { font: 8px var(--mono); color: #7a7e68; }
+.rennai-album-copy > .eyebrow { font-size: 8px; color: #767c65; }
+.rennai-album-copy > h2 { font-size: 65px; margin: 10px 0 14px; }
+#rennai-album-intro { font-size: 15px; line-height: 1.7; }
+#rennai-album-intro > span { font-size: 12px; color: #777c66; }
+.rennai-album-description { font-size: 12px; line-height: 1.8; margin: 16px 0 22px; color: #6e7461; max-width: 260px; }
+.rennai-memory-tabs { display: grid; gap: 9px; }
+.rennai-memory-tabs > button { display: flex; align-items: center; gap: 12px; padding: 7px; border: 1px solid #e0dece; border-radius: 8px; background: transparent; text-align: left; transition: background .2s, border-color .2s; min-width: 0; }
+.rennai-memory-tabs > button:hover { background: #efeee4; }
+.rennai-memory-tabs > button[aria-selected='true'] { background: #e8eddd; border-color: #98a77e; }
+.rennai-tab-image { position: relative; display: block; width: 39px; height: 48px; flex-shrink: 0; overflow: hidden; border-radius: 3px; background: #d3d4c4; }
+.rennai-tab-image img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.rennai-play-mark { position: absolute; inset: 0; display: grid; place-items: center; font-size: 13px; color: white; background: #1f301133; text-shadow: 0 1px 4px #0008; }
+.rennai-memory-tabs small { display: block; font: 7px var(--mono); letter-spacing: .6px; color: #767c65; }
+.rennai-memory-tabs strong { display: block; font-size: 12px; font-weight: 500; margin-top: 5px; }
+.rennai-tab-indicator { font-size: 20px; color: #889d6b; margin-left: auto; margin-right: 4px; }
+.rennai-memory-caption { font-size: 10px; line-height: 1.7; min-height: 35px; margin-top: 16px; color: #7c806d; }
+@keyframes rennai-enter { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+
+@media (max-width: 1000px) {
+  .rennai-card { padding: 17px; gap: 18px; }
+  .rennai-card-link { flex-wrap: wrap; }
+  .rennai-card-link > span { flex-basis: 100%; margin-left: 0; margin-top: 2px; }
+}
+@media (max-width: 600px) {
+  .rennai-album-header { padding: 10px 16px; }
+  .rennai-album-header > .eyebrow { font-size: 7px; letter-spacing: .7px; }
+  .rennai-album-layout { display: flex; flex-direction: column; gap: 18px; padding: 16px; }
+  .rennai-media-panel, .rennai-album-copy { width: 100%; }
+  .rennai-media { height: min(48dvh, 420px); }
+  .rennai-frame figcaption { padding: 10px 3px; font-size: 19px; }
+  .rennai-album-copy { display: grid; grid-template-columns: 1fr 1fr; column-gap: 12px; }
+  .rennai-album-copy > .eyebrow { grid-column: 1 / -1; font-size: 7px; }
+  .rennai-album-copy > h2 { font-size: 39px; margin: 5px 0 12px; }
+  #rennai-album-intro { font-size: 10px; padding-top: 6px; text-align: right; }
+  #rennai-album-intro > span { font-size: 10px; }
+  .rennai-album-description { display: none; }
+  .rennai-memory-tabs { grid-column: 1 / -1; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 7px; }
+  .rennai-memory-tabs > button { padding: 7px 5px; flex-direction: column; gap: 5px; align-items: flex-start; }
+  .rennai-tab-image { height: 38px; width: 100%; }
+  .rennai-tab-image img { object-position: center 40%; }
+  .rennai-tab-indicator { display: none; }
+  .rennai-memory-tabs small { font-size: 6px; }
+  .rennai-memory-tabs strong { font-size: 9px; margin-top: 4px; }
+  .rennai-memory-caption { grid-column: 1 / -1; margin-top: 10px; min-height: 0; font-size: 9px; }
+}
+@media (max-width: 360px) {
+  .rennai-card { gap: 14px; padding: 14px; }
+  .rennai-snapshot { width: 69px; }
+  .rennai-snapshot img { height: 94px; }
+  .rennai-snapshot::before { left: 15px; }
+  .rennai-card-description { font-size: 10px; }
+  .rennai-card .rennai-wordmark { font-size: 32px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .rennai-dialog[open], .rennai-frame { animation: none; }
+  .rennai-card:hover .rennai-snapshot { transform: rotate(-6deg); }
+}
